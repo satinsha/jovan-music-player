@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<Html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="style.css">
+
+   <title>MUSIC HUB</title> 
+</head>
+<body>
+
+
+<div class="music-player">
+
+<h1>MUSIC HUB</h1>
+<h2>TOP CHARTS</h2>
+<img id="cover" src="96.jpg" width="250">
+<p id="nowplaying">Nowplaying: None</p>
+<audio id="mainplayer"></audio>
+<input type="range" id="progress" value="0" min="0" max="100">
+<input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+<p id="time">0.00/0.00</p>
+
+<div class="controls">
+  <button onclick="toggleplay()">play/pause</button>
+  <button onclick="previoussong()">previous</button>
+  <button onclick="nextsong()">Next</button>
+</div>
+
+  <ul class="song-list">
+    <li class="song-card">
+      <h3>96</h3>
+      <img src="96.jpg" alt="Music Cover" width="150">
+      <button onclick="playsong( 'Kaathalae Kaathalae','kaathalae kaathalae - SenSongsMp3.Co.mp3' ,'96.jpg')">
+       play</button>
+  
+    <br><br>
+  </li>
+   <li class="song-card">
+     <h3>DHOOM</h3>
+     <img src="dhoom.jpg"alt="Music Cover" width="150">
+     <Button onclick="playsong('DHOOM','Dhoom Machale Sunidhi Chauhan 320 Kbps.mp3','dhoom.jpg')">
+      Play</Button>
+      <br><br>
+    </li>
+    <li class="song-card">
+     <h3>Aashiqui 2</h3>
+     <img src="tum hi ho.jpg"alt="Music Cover" width="150">
+     <Button onclick="playsong('Tum Hi Ho','Tum Hi Ho Aashiqui 2 320 Kbps.mp3','tum hi ho.jpg')">
+    Play</button>
+    <br><br>
+    
+    <li class="song-card">
+     <h3>Beliver</h3>
+     <img src="Beliver dragons.jpg"alt="Music Cover" width="150">
+     <Button onclick="playsong('Believer','Imagine_Dragons_-_Believer_NPBM2020.mp3','Beliver dragons.jpg')">
+    Play</Button>
+    <br><br>
+    </li>
+    <li class="song-card">                                                                           
+    <h3>Gunday</h3>
+   <img src="gunday.jpg"-alt="Music Cover" width="150">
+    <Button onclick="playsong('Gunday','Gunday(KoshalWorld.Com).mp3','Gunady.jpg')">
+      Play</Button>
+      <br><br>
+      </li>
+   <li class="song-card">                                                                           
+    <h3>RRR</h3>
+   <img src="RRR.Jpg"-alt="Music Cover" width="150">
+    <Button onclick="playsong('RRR','RRR.mp3','RRR.jpg')">
+      Play</Button>
+      <br><br>
+      </li>
+     <li class="song-card">                                                                           
+    <h3>Bar Bar Dekho</h3>
+   <img src="kala cahsma.jpg"-alt="Music Cover" width="150">
+    <Button onclick="playsong('kala cahsma','Kala Chashma Inderbir Sidhu 128 Kbps.mp3','kala Cahsma.jpg')">
+      Play</Button>
+      <br><br>
+      </li>
+     <li class="song-card">                                                                           
+    <h3>param sundari</h3>
+   <img src="param sundari.jpg"-alt="Music Cover" width="150">
+    <Button onclick="playsong('param sundari','Param Sundari(KoshalWorld.Com).mp3','param sundari.jpg')">
+      Play</Button>
+      <br><br>
+      </li>
+     <li class="song-card">                                                                           
+    <h3>Vatti</h3>
+   <img src="vatti coming.jpg"-alt="Music Cover" width="150">
+    <Button onclick="playsong('vatti coming','vatti coming.mp3','vatti coming.jpg')">
+      Play</Button>
+      <br><br>
+      </li>
+      <li class="song-card">                                                                           
+    <h3>Ra One</h3>
+   <img src="chammak challo.jpg"-alt="Music Cover" width="150">
+    <Button onclick="playsong('Chammak challo','chammak challo.mp3','chammak challo.jpg')">
+      Play</Button>
+      <br><br>
+      </li>
+    
+  </ul>
+     <script src="script.js"></script>
+     </body>
+     </Html>
